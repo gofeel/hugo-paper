@@ -288,6 +288,7 @@ img {
 .post-title {
   margin-bottom: 2px;
   font-size: 40px;
+  word-break: keep-all;
   transform: translateX(-2px);
 }
 .post-meta {
