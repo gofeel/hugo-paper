@@ -29,7 +29,7 @@
     {{ end -}}
     <!-- Misc -->
     {{ if eq hugo.Environment "production" }}
-    {{- template "_internal/google_analytics_async.html" . }}
+
     {{- template "_internal/opengraph.html" . }}
     {{- end }}
     <!-- Script -->
@@ -79,6 +79,7 @@
         }
       }
     </script>
+    {{ template "_internal/google_analytics.html" . }}
   </head>
   <body class="{{ if eq .Kind `page` }}single{{ else }}list{{ if .IsHome }} home{{ end }}{{ end }}">
     <script>
